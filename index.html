@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./style/style.css">
     <title>La Cueva</title>
 </head>
@@ -14,7 +15,9 @@
         <div class="headerflex">
             <div class="logo">
        <!-- img src="img/Logo.png" alt="Logo">aqui va logo !-->
-            <h1 class="logo">LA CUEVA</h1>
+            <h1 data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine">LA CUEVA</h1>
             </div>
         <nav>
             <ul class="menu">
@@ -36,24 +39,27 @@
         <p class="parrafodos">Te ofrecemos una gran variedad de:<p>
         </section>
     
-    <div class="row">
+    <section class="row">
 
         <div>
-        <img src=".//images/ron1.jpg" alt="Rones">
+        <img src=".//images/ron1.jpg" alt="Rones" data-aos="zoom-in">
            <h2>Rones</h2>
         </div>
 
         <div>
-        <img src="./images/vodka2.jpg" alt="">
+        <img src="./images/vodka2.jpg" alt="" data-aos="zoom-in">
          <h2>Vodka</h2>
         </div>
 
         <div>
-        <img src=".//images/vinos3.jpg" alt="Vinos">
+        <img src=".//images/vinos3.jpg" alt="Vinos" data-aos="zoom-in">
         <h2>Vinos</h2> 
         </div>
+
+
+    </section>
        
-    </div>
+   
     
     <section>
     <p class="parrafodos">Encuentra tus bebidas favoritas acá<p>
@@ -78,6 +84,11 @@
         <p>© Copyright 2022 Luis Gonzalez - Todos los Derechos Reservados<p>
     
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
    
  
 </body>

@@ -4,8 +4,9 @@
     margin:0;
 }
 
+
 body{
-    background-color: #C4FCF0;
+    background-image: linear-gradient(to left,#3f5efb,#46fcd2);
     background-position:cover;
     background-repeat:repeat;
     
@@ -37,50 +38,36 @@ header {
 .menu{
     display: flex;
     flex-wrap: wrap;
-}
-
-.menu li a{
+    transition: all 1s;
     list-style: none;
-    padding: 0 15px;
 }
 
+.menu:hover{
+    background-color: rgb(22, 34, 160);
+    
+}
 .menu li a{
+    padding: 0 15px;
     color: white;
     text-decoration: none;
     font-weight:bold;
     text-transform: uppercase;
 }
-/* 
-header{
-    background-color: black;
-    background-size:cover;
-    padding: 10px;
-    position: sticky;
-    top: 0;
 
- } */
-
-/* nav ul{
-    display: flex;
-    justify-content:flex-start;
-    flex-wrap: wrap;
- }
-
-ul li{
-    list-style-type: none;
-    background-color:#4C8076;
-}
-
-a{
-    text-decoration: none;
-    font-weight: bold;
-    color:white;
-    padding: 20px;     
-} */
 
 .row div{
     margin: 12px;
-} 
+   
+}
+
+.row div:hover{
+    transform: scale(1.1);
+}
+
+.sectionflex div:hover{
+    transform: scale(1.1);
+}
+
 
 .row img{
     border: 8px solid #00C0A6;
@@ -97,16 +84,17 @@ a{
     justify-content: space-around;
     padding: 10px;
     margin: 3em;
-    background-color: darkgray;
+    background-image: linear-gradient(#000000,#0b9ad0)
     
 }
+
 
 .sectionflex{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin:3em;
-    background-color: darkgray;
+    background-image: linear-gradient(#000000,#0b9ad0)
 
 }
 
@@ -125,9 +113,28 @@ a{
     letter-spacing: 2px;
     padding: 23px;
     font-size: 24px;
-    background-color: #00C0A6;
+    background-color: #0bdfe2a7;
 
 }
+
+.parrafouno{
+    animation-duration: 1s;
+    animation-name: slidein;
+  }
+
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+
+  }
 
 .parrafodos{
     font-family: 'Roboto', sans-serif;
