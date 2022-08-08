@@ -12,30 +12,42 @@ body{
     
 }
 
-header {
+header{
+    position: sticky;
+    top:0;
+}
+
+.mover{
+    display: flex;
+    justify-content: space-around;
+    height: 20vh;
+} 
+
+
+/* header {
     display: flex;
     background-color: black;
     height: 32vh;
     width: 100%;
     position: sticky;
     top: 0;
-}
+} */
 
-.headerflex{
+/* .headerflex{
     display: flex;
     width: 80%;
     margin: auto;
     align-items:center;
     justify-content:space-between;
     flex-wrap: wrap;
-}
+} */
 
-.logo h1{
+/* .logo h1{
     text-decoration: none;
     color: white;
-}
+} */
 
-.menu{
+/* .menu{
     display: flex;
     flex-wrap: wrap;
     transition: all 1s;
@@ -45,31 +57,31 @@ header {
 .menu:hover{
     background-color: rgb(22, 34, 160);
     
-}
-.menu li a{
+} */
+/* .menu li a{
     padding: 0 15px;
     color: white;
     text-decoration: none;
     font-weight:bold;
     text-transform: uppercase;
-}
+} */
 
 
-.row div{
+.secciones div{
     margin: 12px;
    
 }
 
-.row div:hover{
+.secciones div:hover{
     transform: scale(1.1);
 }
 
 .sectionflex div:hover{
     transform: scale(1.1);
-}
+} 
 
 
-.row img{
+.secciones img{
     border: 8px solid #00C0A6;
     width: 340px;
     height: 275px;
@@ -77,7 +89,7 @@ header {
 }
 
 
-.row{
+.secciones{
     display: flex;
     flex-wrap:nowrap;
     align-items: flex-start;
@@ -136,16 +148,6 @@ header {
 
   }
 
-.parrafodos{
-    font-family: 'Roboto', sans-serif;
-    font-weight: bolder;
-    text-align:justify;
-    color: hsl(0, 0%, 0%);
-    letter-spacing: 2px;
-    font-size: 16px;
-    padding-top: 10px;
-
-}
 
 h1{
     font-style:italic;
@@ -194,8 +196,5 @@ footer{
   
 } 
 
-
-
-  
 
 
