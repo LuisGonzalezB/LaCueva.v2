@@ -5,20 +5,16 @@
 @import "footer";
 
 
- header{
-    position: sticky;
-    top:0;
-} 
-
 .mover{
     display: flex;
     justify-content: space-around;
 } 
 
 
-.grilla div:hover{
+.grilla2 div:hover{
     transform: scale(1.1);
 }
+
 
 .sectionflex div:hover{
     transform: scale(1.1);
@@ -33,7 +29,7 @@
 
 }
 .sectionflex img{
-    border: 8px solid #00C0A6;
+    border: 5px solid #00C0A6;
     width: 23rem; 
     height: 90%;
     margin-top: 20px;
@@ -43,30 +39,74 @@
     display: flex;
     justify-content: center;
     margin:4em;
-    background-image: linear-gradient(#000000,#0b9ad0)
 } 
 
 .flexbots img{
 
-    border: 8px solid #00C0A6;
-    width: 22rem; 
     height: 90%;
     margin-top: 20px;
 }
 
+.flexbots div:hover{
+    transform: scale(1.1);
+} 
 
-  @keyframes slidein {
+@keyframes slidein{
     from {
-      margin-left: 100%;
-      width: 300%
+    margin-left: 100%;
+    width: 300%
     }
-  
+
     to {
-      margin-left: 0%;
-      width: 100%;
+    margin-left: 0%;
+    width: 100%;
     }
+}
 
-  }
+.grilla{
+    background-color: $White;
+}
+
+.marcas{
+    @extend .grilla;
+    display: flex;
+    justify-content: center;
+}
 
 
+$redes: (
+    whatsapp: #71ee55,
+    facebook:#3a5795,
+    instagram: #ffa500,
+);
+
+
+@each $red, $color in $redes {
+    .btn--#{$red}{
+        background-color: $color;
+    }
+}
+
+@mixin fondo {
+    background-color: $White
+}
+
+.parrafouno{
+    @include fondo;
+    font-family: 'Roboto', sans-serif;
+    text-transform:initial;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    padding: 23px;
+    font-size: 24px;
+    color:black;
+}
+
+.buyboton{
+    display: flex;
+    justify-content: center;
+    
+    padding: 4px 80px;
+    text-align: center;
+}
 
