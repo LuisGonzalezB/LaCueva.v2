@@ -39,14 +39,20 @@ h2 {
           animation-name: slidein;
 }
 
+.texmapa {
+  font-family: "Nunito", sans-serif;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
 footer {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 70px;
+  padding: 20px;
   margin-bottom: 0;
-  margin-top: 250px;
+  margin-top: 60px;
   background-color: #DFE0DF;
   font-family: "Roboto", sans-serif;
   font-weight: bolder;
@@ -129,6 +135,7 @@ footer {
 
 .marcas {
   display: flex;
+  flex-wrap: nowrap;
   justify-content: center;
 }
 
@@ -160,4 +167,22 @@ footer {
   justify-content: center;
   padding: 4px 80px;
   text-align: center;
+}
+
+.map-responsive {
+  display: flex;
+  justify-content: center;
+  margin-top: 0px;
+  overflow: hidden;
+  padding-bottom: 40%;
+  position: relative;
+  height: 0;
+}
+
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }/*# sourceMappingURL=estilos.css.map */

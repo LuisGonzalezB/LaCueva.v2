@@ -64,7 +64,7 @@
 }
 
 .grilla{
-    background-color: $White;
+    background-color: white;
 }
 
 .marcas{
@@ -108,5 +108,25 @@ $redes: (
     justify-content: center;
     padding: 4px 80px;
     text-align: center;
+}
+
+.map-responsive{
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+    overflow:hidden;
+    padding-bottom:40%;
+    position:relative;
+    height:0;
+    
+}
+
+.map-responsive iframe{
+
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
 }
 
