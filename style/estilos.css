@@ -109,47 +109,19 @@ footer {
   transform: scale(1.1);
 }
 
-@-webkit-keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%;
-  }
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
-
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%;
-  }
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
 .grilla, .marcas {
   background-color: white;
 }
 
 .marcas {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
-.btn--whatsapp {
-  background-color: #71ee55;
-}
-
-.btn--facebook {
-  background-color: #3a5795;
-}
-
-.btn--instagram {
-  background-color: #ffa500;
+.marca {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .parrafouno {
@@ -168,6 +140,11 @@ footer {
   justify-content: center;
   padding: 4px 80px;
   text-align: center;
+}
+
+.botonmagic:hover {
+  background-color: #005388;
+  transition: background-color 0, 5s linear;
 }
 
 .map-responsive {

@@ -53,17 +53,6 @@
     transform: scale(1.1);
 } 
 
-@keyframes slidein{
-    from {
-    margin-left: 100%;
-    width: 300%
-    }
-
-    to {
-    margin-left: 0%;
-    width: 100%;
-    }
-}
 
 .grilla{
     background-color: white;
@@ -72,22 +61,13 @@
 .marcas{
     @extend .grilla;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
-
-$redes: (
-    whatsapp: #71ee55,
-    facebook:#3a5795,
-    instagram: #ffa500,
-);
-
-
-@each $red, $color in $redes {
-    .btn--#{$red}{
-        background-color: $color;
-    }
+.marca{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 @mixin fondo {
@@ -110,6 +90,11 @@ $redes: (
     justify-content: center;
     padding: 4px 80px;
     text-align: center;
+}
+
+.botonmagic:hover{
+    background-color:#005388;
+    transition: background-color 0,5s linear;
 }
 
 .map-responsive{
